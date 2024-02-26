@@ -1,0 +1,16 @@
+#form{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(129, 129, 129, 0.788);
+    padding: 40px;
+    display: none;
+    border-radius: 25px;
+}
+
+body{
+    position: relative;
+}
