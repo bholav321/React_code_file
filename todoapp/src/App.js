@@ -60,7 +60,12 @@ class App extends Component{
             </tr>
           </thead>
           <tbody>
-            {this.state.task.filter((arr)=>arr.status===this.state.taskStatus ).map((data,index)=><tr  key={index} className={data.priority==='Medium'?'bg-warning':data.priority === 'Low' ? 'bg-primary' : 'bg-danger'}>
+            {this.state.task.filter((arr)=>arr.status===this.state.taskStatus ).sort((a,b)=>{
+              let nameA = a.priority.toUpperCase();
+              let nameB = b.priority.toUpperCase();
+              let statement = nameA<nameB ? -1:1;
+              return statement;
+            }).map((data,index)=><tr  key={index} className={data.priority==='Medium'?'bg-warning':data.priority === 'Low' ? 'bg-primary' : 'bg-danger'}>
               <td>{index+1}</td>
               <td>{data.task}</td>
               <td id='taskDate'>{data.date}</td>
