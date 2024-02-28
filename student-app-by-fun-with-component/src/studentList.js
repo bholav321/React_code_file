@@ -1,0 +1,39 @@
+const studentList = [
+    {
+        rollno:1001,
+        name:"Vikram",
+        branch:"CS",
+        mobile:9878996754
+    },
+    {
+        rollno:1002,
+        name:"Nakul",
+        branch:"IT",
+        mobile:9878996714
+    },
+    {
+        rollno:1003,
+        name:"Raghav",
+        branch:"MECH",
+        mobile:9874996754
+    },
+    {
+        rollno:1004,
+        name:"Aaditya",
+        branch:"EC",
+        mobile:9874996754
+    },
+    {
+        rollno:1005,
+        name:"Bhawesh",
+        branch:"CS",
+        mobile:9878696754
+    },{
+        rollno:1006,
+        name:"Cheeku",
+        branch:"IT",
+        mobile:9878926754
+    }
+    ];
+
+export default studentList;
