@@ -64,6 +64,7 @@ class App extends Component{
               let nameA = a.priority.toUpperCase();
               let nameB = b.priority.toUpperCase();
               let statement = nameA<nameB ? -1:1;
+              
               return statement;
             }).map((data,index)=><tr  key={index} className={data.priority==='Medium'?'bg-warning':data.priority === 'Low' ? 'bg-primary' : 'bg-danger'}>
               <td>{index+1}</td>
