@@ -1,3 +1,59 @@
+
 #menu{
   background-color: blueviolet;
+}
+#navbarSupportedContent{
+  width: 50% !important;
+}
+#login{
+  width: 20%;
+}
+#signIn, #signUp{
+  cursor: pointer;
+}
+li{
+  list-style: none;
+}
+#logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  margin-right: 100px;
+  height: 60px;
+  /* border: 2px solid red; */
+}
+a{
+  padding: 10px !important;
+  font-size: 20px;
+}
+a:hover{
+  color: white !important;
+}
+#image{
+  mix-blend-mode: darken;
+  width: 150px;
+  height: 150px;
+}
+
+#logoname{
+  font-size:25px;
+  font-family: sans-serif;
+}
+
+/* #right-form{
+  width: 60%;
+}
+#left-form{
+  width: 40%;
+} */
+#form{
+  width: 70%;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+
+#data-box{
+  border: 2px solid red;
 }
