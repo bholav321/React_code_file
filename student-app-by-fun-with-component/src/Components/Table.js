@@ -1,5 +1,5 @@
 function Table(props){
-    let {student,deleteRecord,defaultBranch} = props;
+    let {student,deleteRecord,defaultBranch,changes} = props;
     return<>
     <table className='table border'>
         <thead>
@@ -10,6 +10,7 @@ function Table(props){
             <th>Branch</th>
             <th>Mobile</th>
             <th>Delete</th>
+            <th>Change</th>
           </tr>
         </thead>
         <tbody>
@@ -20,6 +21,7 @@ function Table(props){
             <td>{data.branch}</td>
             <td>{data.mobile}</td>
             <td><button onClick={()=>deleteRecord(data.rollno)} className='btn btn-outline-danger'>Delete</button></td>
+            <td><button className="btn btn-primary" onClick={()=>changes({...data})}>Edit</button></td>
           </tr>)}
         </tbody>
       </table>
